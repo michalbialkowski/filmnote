@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+    <title>Filmnote</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=d41d8cd98f00b204e9800998ecf8427e">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope:200,300,400,500,600,700,800&amp;subset=latin-ext&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css?h=1ebaba3465f39106375be623a0ebab45">
+    <link rel="stylesheet" href="assets/css/mdb/mdb.free.compiled.css?h=11a1d791ef3625ea074b59884c5c2536">
+    <link rel="stylesheet" href="assets/css/custom/components/components.compiled.css?h=bad328500ba32b2f05a1f0ff9ffea723">
+    <link rel="stylesheet" href="assets/css/custom/libs/libs.compiled.css?h=28462e4728cc29b43695b7a76328f962">
+    <link rel="stylesheet" href="assets/css/custom/overrides/overrides.compiled.css?h=60c9b3fddadb88d21767db881b59b6fc">
+</head>
+
+<body>
+    <div>
+        <main class="bg-dark bg-opacity-50">
+            <div class="container-xxl shadow px-0">
+                <div class="row g-0 flex-wrap flex-lg-nowrap" style="min-height: 100vh; max-width: 100vw;">
+                    <div class="col-lg-8 col-xl-9 d-flex flex-column justify-content-between bg-light">
+                        <div class="pb-5">
+                            <div class="text-white bg-dark pt-5 pb-3 px-4 px-xxl-5">
+                                <p class="text-uppercase text-white-50 mb-0 small"><span>Custom components</span></p>
+                                <h1 class="mb-0">Ratio</h1>
+                            </div>
+                            <div class="pt-5 px-4 px-xxl-5">
+                                <h1 class="display-6 border-bottom pb-2 mb-3">Basic example</h1>
+                                <h2 class="h4">Default (1:1)</h2>
+                                <div class="bg-white p-4">
+                                    <div class="row">
+                                        <div class="col-md-6 col-xl-4">
+                                            <div class="ratio">
+                                                <div><img class="img-fluid" src="assets/img/samples/matthew-henry-VviFtDJakYk-unsplash.jpeg?h=4c72ef708a7dfb839ad5862eda604a20"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-1" href="#collapse-1" role="button">SHOW CODE</a>
+                                    <div class="collapse mt-3" id="collapse-1">
+                                        <div class="bg-white p-3 overflow-scroll"><code class="text-nowrap">&lt;div class="ratio"&gt;<br>&nbsp; &lt;div&gt;<br>&nbsp; &nbsp; &lt;img src="…" alt="…" /&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;<br></code></div>
+                                    </div>
+                                </div>
+                                <h1 class="display-6 border-bottom pb-2 mb-3 mt-5">Proportions</h1>
+                                <div class="table-responsive text-nowrap bg-white mb-4">
+                                    <table class="table table-sm table-bordered mb-0 align-middle">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-end">Ratio</th>
+                                                <th class="text-center">Class</th>
+                                                <th>Orientation</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="text-end">5:1</th>
+                                                <td class="text-center"><code>ratio-5-1</code></td>
+                                                <td rowspan="8">Horizontal</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-end">3:1</th>
+                                                <td class="text-center"><code>ratio-3-1</code></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-end">5:2</th>
+                                                <td class="text-center"><code>ratio-5-2</code></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-end">2:1</th>
+                                                <td class="text-center"><code>ratio-2-1</code></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-end">16:9</th>
+                                                <td class="text-center"><code>ratio-16-9</code></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-end">3:2</th>
+                                                <td class="text-center"><code>ratio-3-2</code></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-end">4:3</th>
+                                                <td class="text-center"><code>ratio-4-3</code></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-end">5:4</th>
+                                                <td class="text-center"><code>ratio-5-4</code></td>
+                                            </tr>
+                                            <tr class="table-active">
+                                                <th class="text-end">1:1</th>
+                                                <td class="text-center"><code>ratio-1-1</code></td>
+                                                <td>Proportional (square)</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-end">4:5</th>
+                                                <td class="text-center"><code>ratio-4-5</code></td>
+                                                <td rowspan="4">Vertical</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-end">3:4</th>
+                                                <td class="text-center"><code>ratio-3-4</code></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-end">2:3</th>
+                                                <td class="text-center"><code>ratio-2-3</code></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-end">1:2</th>
+                                                <td class="text-center"><code>ratio-1-2</code></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="bg-white p-4">
+                                    <div class="row gy-4">
+                                        <div class="col-md-6 col-xl-4">
+                                            <h5 class="border-bottom pb-1 mb-3">4:3</h5>
+                                            <div class="ratio ratio-4-3">
+                                                <div><img class="img-fluid" src="assets/img/samples/matthew-henry-VviFtDJakYk-unsplash.jpeg?h=4c72ef708a7dfb839ad5862eda604a20"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-xl-4">
+                                            <h5 class="border-bottom pb-1 mb-3">3:2</h5>
+                                            <div class="ratio ratio-3-2">
+                                                <div><img class="img-fluid" src="assets/img/samples/matthew-henry-VviFtDJakYk-unsplash.jpeg?h=4c72ef708a7dfb839ad5862eda604a20"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-xl-4">
+                                            <h5 class="border-bottom pb-1 mb-3">16:9</h5>
+                                            <div class="ratio ratio-16-9">
+                                                <div><img class="img-fluid" src="assets/img/samples/matthew-henry-VviFtDJakYk-unsplash.jpeg?h=4c72ef708a7dfb839ad5862eda604a20"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-2" href="#collapse-2" role="button">SHOW CODE</a>
+                                    <div class="collapse mt-3" id="collapse-2">
+                                        <div class="bg-white p-3 overflow-scroll"><code class="text-nowrap">&lt;div class="ratio ratio-4-3"&gt;<br>&nbsp; &lt;div&gt;<br>&nbsp; &nbsp; &lt;img src="…" alt="…" /&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;<br><br>&lt;div class="ratio ratio-3-2"&gt;<br>&nbsp; &lt;div&gt;<br>&nbsp; &nbsp; &lt;img src="…" alt="…" /&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;<br><br>&lt;div class="ratio ratio-16-9"&gt;<br>&nbsp; &lt;div&gt;<br>&nbsp; &nbsp; &lt;img src="…" alt="…" /&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;<br></code></div>
+                                    </div>
+                                </div>
+                                <h1 class="display-6 border-bottom pb-2 mb-3 mt-5">Breakpoints</h1>
+                                <div class="table-responsive text-nowrap text-center bg-white mb-3">
+                                    <table class="table table-sm table-bordered mb-0 align-middle">
+                                        <thead>
+                                            <tr class="align-middle">
+                                                <th class="text-end" colspan="2">Breakpoint</th>
+                                                <th><span class="d-block">XS</span><small class="d-block">and above</small></th>
+                                                <th><span class="d-block">SM</span><small class="d-block">and above</small></th>
+                                                <th><span class="d-block">MD</span><small class="d-block">and above</small></th>
+                                                <th><span class="d-block">LG</span><small class="d-block">and above</small></th>
+                                                <th><span class="d-block">XL</span><small class="d-block">and above</small></th>
+                                                <th><span class="d-block">XXL</span><small class="d-block">and above</small></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="table-active fw-bold">
+                                                <th class="text-end" colspan="2">Main class</th>
+                                                <td><code>ratio</code></td>
+                                                <td><code>ratio-sm</code></td>
+                                                <td><code>ratio-md</code></td>
+                                                <td><code>ratio-lg</code></td>
+                                                <td><code>ratio-xl</code></td>
+                                                <td><code>ratio-xxl</code></td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="13"><span class="d-block">Ratio</span></td>
+                                                <th class="text-end">5:1</th>
+                                                <td><code>ratio-5-1</code></td>
+                                                <td><code>ratio-sm-5-1</code></td>
+                                                <td><code>ratio-md-5-1</code></td>
+                                                <td><code>ratio-lg-5-1</code></td>
+                                                <td><code>ratio-xl-5-1</code></td>
+                                                <td><code>ratio-xxl-5-1</code></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-end">3:1</th>
+                                                <td><code>ratio-3-1</code></td>
+                                                <td><code>ratio-sm-3-1</code></td>
+                                                <td><code>ratio-md-3-1</code></td>
+                                                <td><code>ratio-lg-3-1</code></td>
+                                                <td><code>ratio-xl-3-1</code></td>
+                                                <td><code>ratio-xxl-3-1</code></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-end">5:2</th>
+                                                <td><code>ratio-5-2</code></td>
+                                                <td><code>ratio-sm-5-2</code></td>
+                                                <td><code>ratio-md-5-2</code></td>
+                                                <td><code>ratio-lg-5-2</code></td>
+                                                <td><code>ratio-xl-5-2</code></td>
+                                                <td><code>ratio-xxl-5-2</code></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-end">2:1</th>
+                                                <td><code>ratio-2-1</code></td>
+                                                <td><code>ratio-sm-2-1</code></td>
+                                                <td><code>ratio-md-2-1</code></td>
+                                                <td><code>ratio-lg-2-1</code></td>
+                                                <td><code>ratio-xl-2-1</code></td>
+                                                <td><code>ratio-xxl-2-1</code></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-end">16:9</th>
+                                                <td><code>ratio-16-9</code></td>
+                                                <td><code>ratio-sm-16-9</code></td>
+                                                <td><code>ratio-md-16-9</code></td>
+                                                <td><code>ratio-lg-16-9</code></td>
+                                                <td><code>ratio-xl-16-9</code></td>
+                                                <td><code>ratio-xxl-16-9</code></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-end">3:2</th>
+                                                <td><code>ratio-3-2</code></td>
+                                                <td><code>ratio-sm-3-2</code></td>
+                                                <td><code>ratio-md-3-2</code></td>
+                                                <td><code>ratio-lg-3-2</code></td>
+                                                <td><code>ratio-xl-3-2</code></td>
+                                                <td><code>ratio-xxl-3-2</code></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-end">4:3</th>
+                                                <td><code>ratio-4-3</code></td>
+                                                <td><code>ratio-sm-4-3</code></td>
+                                                <td><code>ratio-md-4-3</code></td>
+                                                <td><code>ratio-lg-4-3</code></td>
+                                                <td><code>ratio-xl-4-3</code></td>
+                                                <td><code>ratio-xxl-4-3</code></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-end">5:4</th>
+                                                <td><code>ratio-5-4</code></td>
+                                                <td><code>ratio-sm-5-4</code></td>
+                                                <td><code>ratio-md-5-4</code></td>
+                                                <td><code>ratio-lg-5-4</code></td>
+                                                <td><code>ratio-xl-5-4</code></td>
+                                                <td><code>ratio-xxl-5-4</code></td>
+                                            </tr>
+                                            <tr class="table-active">
+                                                <th class="text-end">1:1</th>
+                                                <td><code>ratio-1-1</code></td>
+                                                <td><code>ratio-sm-1-1</code></td>
+                                                <td><code>ratio-md-1-1</code></td>
+                                                <td><code>ratio-lg-1-1</code></td>
+                                                <td><code>ratio-xl-1-1</code></td>
+                                                <td><code>ratio-xxl-1-1</code></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-end">4:5</th>
+                                                <td><code>ratio-4-5</code></td>
+                                                <td><code>ratio-sm-4-5</code></td>
+                                                <td><code>ratio-md-4-5</code></td>
+                                                <td><code>ratio-lg-4-5</code></td>
+                                                <td><code>ratio-xl-4-5</code></td>
+                                                <td><code>ratio-xxl-4-5</code></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-end">3:4</th>
+                                                <td><code>ratio-3-4</code></td>
+                                                <td><code>ratio-sm-3-4</code></td>
+                                                <td><code>ratio-md-3-4</code></td>
+                                                <td><code>ratio-lg-3-4</code></td>
+                                                <td><code>ratio-xl-3-4</code></td>
+                                                <td><code>ratio-xxl-3-4</code></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-end">2:3</th>
+                                                <td><code>ratio-2-3</code></td>
+                                                <td><code>ratio-sm-2-3</code></td>
+                                                <td><code>ratio-md-2-3</code></td>
+                                                <td><code>ratio-lg-2-3</code></td>
+                                                <td><code>ratio-xl-2-3</code></td>
+                                                <td><code>ratio-xxl-2-3</code></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-end">1:2</th>
+                                                <td><code>ratio-1-2</code></td>
+                                                <td><code>ratio-sm-1-2</code></td>
+                                                <td><code>ratio-md-1-2</code></td>
+                                                <td><code>ratio-lg-1-2</code></td>
+                                                <td><code>ratio-xl-1-2</code></td>
+                                                <td><code>ratio-xxl-1-2</code></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <h2 class="h4 mt-4">How to use?</h2>
+                                <div class="table-responsive text-nowrap text-center bg-white mb-3">
+                                    <table class="table table-sm table-bordered mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-end">Breakpoint</th>
+                                                <th>XS</th>
+                                                <th>SM</th>
+                                                <th>MD</th>
+                                                <th>LG</th>
+                                                <th>XL</th>
+                                                <th>XXL</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="text-end">Ratio</th>
+                                                <td>4:5</td>
+                                                <td>1:1</td>
+                                                <td><span class="d-block">1:1</span><small class="d-block">from SM</small></td>
+                                                <td><span class="d-block">1:1</span><small class="d-block">from SM</small></td>
+                                                <td>3:2</td>
+                                                <td>5:2</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-end">Main class</th>
+                                                <td><code>ratio</code></td>
+                                                <td></td>
+                                                <td class="text-black-50"></td>
+                                                <td class="text-black-50"></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-end">Classes</th>
+                                                <td><code>ratio-4-5</code></td>
+                                                <td><code>ratio-sm-1-1</code></td>
+                                                <td class="text-black-50">none</td>
+                                                <td class="text-black-50">none</td>
+                                                <td><code>ratio-xl-3-2</code></td>
+                                                <td><code>ratio-xxl-5-2</code></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="bg-white p-4">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="ratio ratio ratio-4-5 ratio-sm-1-1 ratio-xl-3-2 ratio-xxl-5-2">
+                                                <div><img class="img-fluid" src="assets/img/samples/matthew-henry-VviFtDJakYk-unsplash.jpeg?h=4c72ef708a7dfb839ad5862eda604a20"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-3" href="#collapse-3" role="button">SHOW CODE</a>
+                                    <div class="collapse mt-3" id="collapse-3">
+                                        <div class="bg-white p-3 overflow-scroll"><code class="text-nowrap">&lt;div class="ratio ratio-4-5 ratio-sm-1-1 ratio-xl-3-2 ratio-xxl-5-2"&gt;<br>&nbsp; &lt;div&gt;<br>&nbsp; &nbsp; &lt;img src="…" alt="…" /&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;<br></code></div>
+                                    </div>
+                                </div>
+                                <h2 class="h4 mt-4">Set on a specific breakpoint</h2>
+                                <div class="table-responsive text-nowrap text-center bg-white mb-3">
+                                    <table class="table table-sm table-bordered mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-end">Breakpoint</th>
+                                                <th>XS</th>
+                                                <th>SM</th>
+                                                <th>MD</th>
+                                                <th>LG</th>
+                                                <th>XL</th>
+                                                <th>XXL</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="text-end">Ratio</th>
+                                                <td class="align-middle" colspan="3" rowspan="3"><span class="d-block">n/a</span><small class="d-block">original proportions</small></td>
+                                                <td>4:3</td>
+                                                <td>3:2</td>
+                                                <td>16:9</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-end">Main class</th>
+                                                <td><code>ratio-lg</code></td>
+                                                <td class="text-black-50"></td>
+                                                <td class="text-black-50"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-end">Classes</th>
+                                                <td><code>ratio-lg-4-3</code></td>
+                                                <td><code>ratio-xl-3-2</code></td>
+                                                <td><code>ratio-xxl-16-9</code></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="bg-white p-4">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="ratio-lg ratio-lg-4-3 ratio-xl-3-2 ratio-xxl-16-9">
+                                                <div><img class="img-fluid" src="assets/img/samples/lucas-gouvea-aoEwuEH7YAs-unsplash.jpeg?h=4046f690c03c8c8535600968e81822d7"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-4"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-4" href="#collapse-4" role="button">SHOW CODE</a>
+                                    <div class="collapse mt-3" id="collapse-4">
+                                        <div class="bg-white p-3 overflow-scroll"><code class="text-nowrap">&lt;div class="ratio-lg ratio-lg-4-3 ratio-xl-3-2 ratio-xxl-16-9"&gt;<br>&nbsp; &lt;div&gt;<br>&nbsp; &nbsp; &lt;img src="…" alt="…" /&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;<br></code></div>
+                                    </div>
+                                </div>
+                                <h1 class="display-6 border-bottom pb-2 mb-3 mt-5"><span class="me-3">Youtube example</span><small class="fs-3">(video ratio 16:9)</small></h1>
+                                <div class="bg-white p-4">
+                                    <div class="row gy-4">
+                                        <div class="col-md-6">
+                                            <div class="ratio ratio-16-9"><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/jrTMMG0zJyI" width="1920" height="1080"></iframe></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="ratio ratio-16-9">
+                                                <div>
+                                                    <div><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/AEKxFlfAdIw" width="1920" height="1080"></iframe></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-5" href="#collapse-5" role="button">SHOW CODE</a>
+                                    <div class="collapse mt-3" id="collapse-5">
+                                        <div class="bg-white p-3 overflow-scroll"><code class="text-nowrap">&lt;div class="ratio ratio-16-9"&gt;<br>&nbsp; &lt;iframe <br>&nbsp; &nbsp; allowfullscreen="" frameborder="0" <br>&nbsp; &nbsp; src="…" <br>&nbsp; &nbsp; width="1920" height="1080"<br>&nbsp; &gt;&lt;/iframe&gt;<br>&lt;/div&gt;<br><br>&lt;div class="ratio ratio-16-9"&gt;<br>&nbsp; &lt;div&gt;<br>&nbsp; &nbsp; &lt;div&gt;<br>&nbsp; &nbsp; &nbsp; &lt;iframe<br>&nbsp; &nbsp; &nbsp; &nbsp; allowfullscreen="" frameborder="0"<br>&nbsp; &nbsp; &nbsp; &nbsp; src="…"<br>&nbsp; &nbsp; &nbsp; &nbsp; width="1920" height="1080"<br>&nbsp; &nbsp; &nbsp; &gt;&lt;/iframe&gt;<br>&nbsp; &nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;<br></code></div>
+                                    </div>
+                                </div>
+                                <h1 class="display-6 border-bottom pb-2 mb-3 mt-5">Proportional cards</h1>
+                                <div>
+                                    <div class="row gy-4">
+                                        <div class="col-md-6 col-lg-12 col-xxl-6">
+                                            <div class="bg-white border rounded-0">
+                                                <div class="ratio ratio-1-2 ratio-sm-4-3 ratio-md-1-2 ratio-lg-3-2 ratio-xl-2-1 ratio-xxl-4-5">
+                                                    <div>
+                                                        <div class="p-4 p-md-5 w-100">
+                                                            <h1 class="display-4 mb-3">Heading</h1>
+                                                            <p class="mb-0">Sed nec dolor eu nibh rhoncus convallis in in lacus. Donec efficitur purus lacus. Phasellus odio erat, volutpat sit amet viverra in, efficitur eu quam. Curabitur ac metus a lorem eleifend cursus ut eu tellus. Maecenas accumsan nibh quis neque volutpat, nec ornare enim ultrices. Maecenas et nisi id leo placerat tristique pharetra vitae nunc. Quisque id aliquam ipsum.&nbsp;<br></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-12 col-xxl-6">
+                                            <div class="text-white bg-dark border rounded-0">
+                                                <div class="ratio ratio-1-2 ratio-sm-4-3 ratio-md-1-2 ratio-lg-3-2 ratio-xl-2-1 ratio-xxl-4-5">
+                                                    <div>
+                                                        <div class="p-4 p-md-5 w-100">
+                                                            <h1 class="display-4 mb-3">Heading</h1>
+                                                            <p class="mb-0">Sed nec dolor eu nibh rhoncus convallis in in lacus. Donec efficitur purus lacus. Phasellus odio erat, volutpat sit amet viverra in, efficitur eu quam. Curabitur ac metus a lorem eleifend cursus ut eu tellus.<br></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-6" href="#collapse-6" role="button">Show code</a>
+                                    <div class="collapse mt-3" id="collapse-6">
+                                        <div class="bg-white p-3 overflow-scroll"><code class="text-nowrap">&lt;div class="bg-white border rounded-0"&gt;<br>&nbsp; &lt;div class="ratio ratio-1-2 ratio-sm-4-3 ratio-md-1-2 ratio-lg-3-2 ratio-xl-2-1 ratio-xxl-4-5"&gt;<br>&nbsp; &nbsp; &lt;div&gt;<br>&nbsp; &nbsp; &nbsp; &lt;div class="p-4 p-md-5 w-100"&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &lt;h1 class="display-4 mb-3"&gt;Heading&lt;/h1&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &lt;p class="mb-0"&gt;…&lt;/p&gt;<br>&nbsp; &nbsp; &nbsp; &lt;/div&gt;<br>&nbsp; &nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;<br></code></div>
+                                    </div>
+                                </div>
+                                <h1 class="display-6 border-bottom pb-2 mb-3 mt-5">Content align</h1>
+                                <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-lg-1 row-cols-xl-2">
+                                    <div class="col">
+                                        <h5 class="border-bottom pb-1 mb-3">Middle (default)</h5>
+                                        <div class="bg-white ratio ratio-sm-2-1 ratio-md-5-4 ratio-lg-5-2 ratio-xl-3-2">
+                                            <div>
+                                                <div class="p-4 w-100">
+                                                    <h1>Heading</h1>
+                                                    <p class="lead mb-0">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <h5 class="border-bottom pb-1 mb-3">Top</h5>
+                                        <div class="bg-white ratio ratio-sm-2-1 ratio-md-5-4 ratio-lg-5-2 ratio-xl-3-2">
+                                            <div class="align-items-start">
+                                                <div class="p-4 w-100">
+                                                    <h1>Heading</h1>
+                                                    <p class="lead mb-0">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <h5 class="border-bottom pb-1 mb-3">Bottom</h5>
+                                        <div class="bg-white ratio ratio-sm-2-1 ratio-md-5-4 ratio-lg-5-2 ratio-xl-3-2">
+                                            <div class="align-items-end">
+                                                <div class="p-4 w-100">
+                                                    <h1>Heading</h1>
+                                                    <p class="lead mb-0">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <h5 class="border-bottom pb-1 mb-3">Between</h5>
+                                        <div class="bg-white ratio ratio-sm-2-1 ratio-md-5-4 ratio-lg-5-2 ratio-xl-3-2">
+                                            <div class="flex-column justify-content-between">
+                                                <div class="p-4 w-100">
+                                                    <h1>Heading</h1>
+                                                </div>
+                                                <div class="p-4 w-100">
+                                                    <p class="lead mb-0">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-4"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-7" href="#collapse-7" role="button">Show Code</a>
+                                    <div class="collapse mt-3" id="collapse-7">
+                                        <div class="bg-white p-3 overflow-scroll"><code class="text-nowrap">&lt;div class="ratio bg-white"&gt;<br>&nbsp; &lt;div&gt;<br>&nbsp; &nbsp; &lt;div class="p-4 w-100"&gt;<br>&nbsp; &nbsp; &nbsp; &lt;h1&gt;…&lt;/h1&gt;<br>&nbsp; &nbsp; &nbsp; &lt;p&gt;…&lt;/p&gt;<br>&nbsp; &nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;<br><br>&lt;div class="ratio bg-white"&gt;<br>&nbsp; &lt;div class="align-items-start"&gt;<br>&nbsp; &nbsp; &lt;div class="p-4 w-100"&gt;<br>&nbsp; &nbsp; &nbsp; &lt;h1&gt;…&lt;/h1&gt;<br>&nbsp; &nbsp; &nbsp; &lt;p&gt;…&lt;/p&gt;<br>&nbsp; &nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;<br><br>&lt;div class="ratio bg-white"&gt;<br>&nbsp; &lt;div class="align-items-end"&gt;<br>&nbsp; &nbsp; &lt;div class="p-4 w-100"&gt;<br>&nbsp; &nbsp; &nbsp; &lt;h1&gt;…&lt;/h1&gt;<br>&nbsp; &nbsp; &nbsp; &lt;p&gt;…&lt;/p&gt;<br>&nbsp; &nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;<br><br>&lt;div class="ratio bg-white"&gt;<br>&nbsp; &lt;div class="flex-column justify-content-between"&gt;<br>&nbsp; &nbsp; &lt;div class="p-4 w-100"&gt;<br>&nbsp; &nbsp; &nbsp; &lt;h1&gt;…&lt;/h1&gt;<br>&nbsp; &nbsp; &lt;/div&gt;<br>&nbsp; &nbsp; &lt;div class="p-4 w-100"&gt;<br>&nbsp; &nbsp; &nbsp; &lt;p class="lead mb-0"&gt;…&lt;/p&gt;<br>&nbsp; &nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;<br></code></div>
+                                    </div>
+                                </div>
+                                <h1 class="display-6 border-bottom pb-2 mb-3 mt-5">Proportional images</h1>
+                                <h2 class="h4 mb-3">With ratio</h2>
+                                <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+                                    <div class="col">
+                                        <div class="card overflow-hidden">
+                                            <div class="ratio ratio-1-1">
+                                                <div><img class="img-fluid" src="assets/img/samples/lucas-gouvea-aoEwuEH7YAs-unsplash.jpeg?h=4046f690c03c8c8535600968e81822d7"></div>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Title</h4>
+                                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card overflow-hidden">
+                                            <div class="ratio ratio-1-1">
+                                                <div><img class="img-fluid" src="assets/img/samples/cesar-rincon-XHVpWcr5grQ-unsplash.jpeg?h=b7862432225260c367edeeb417176218"></div>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Title</h4>
+                                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card overflow-hidden">
+                                            <div class="ratio ratio-1-1">
+                                                <div><img class="img-fluid" src="assets/img/samples/rachel-mcdermott-0fN7Fxv1eWA-unsplash.jpeg?h=c61e72bab2b86b8524fb2ffbd09b1e34"></div>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Title</h4>
+                                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="h4 mb-3 mt-4">Default card view</h2>
+                                <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3 opacity-50">
+                                    <div class="col">
+                                        <div class="card overflow-hidden"><img class="img-fluid card-img-top w-100 d-block" src="assets/img/samples/lucas-gouvea-aoEwuEH7YAs-unsplash.jpeg?h=4046f690c03c8c8535600968e81822d7">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Title</h4>
+                                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card overflow-hidden"><img class="img-fluid card-img-top w-100 d-block" src="assets/img/samples/cesar-rincon-XHVpWcr5grQ-unsplash.jpeg?h=b7862432225260c367edeeb417176218">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Title</h4>
+                                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card overflow-hidden"><img class="img-fluid card-img-top w-100 d-block" src="assets/img/samples/rachel-mcdermott-0fN7Fxv1eWA-unsplash.jpeg?h=c61e72bab2b86b8524fb2ffbd09b1e34">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Title</h4>
+                                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h1 class="display-6 border-bottom pb-2 mb-3 mt-5"><span class="me-3">Horizontal cards</span></h1>
+                                <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-lg-1">
+                                    <div class="col">
+                                        <div class="card overflow-hidden">
+                                            <div class="row g-0">
+                                                <div class="col-12 col-lg-3 col-xl-4">
+                                                    <div class="ratio ratio-4-3 ratio-sm-16-9 ratio-md-3-2 ratio-lg-2-3 ratio-xl-5-4 ratio-xxl-4-3">
+                                                        <div><img class="img-fluid" src="assets/img/samples/lucas-gouvea-aoEwuEH7YAs-unsplash.jpeg?h=4046f690c03c8c8535600968e81822d7"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col d-flex align-items-center">
+                                                    <div class="card-body">
+                                                        <h4>Card title</h4>
+                                                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><small class="text-black-50">Last updated 3 mins ago</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card overflow-hidden">
+                                            <div class="row g-0">
+                                                <div class="col-12 col-lg-3 col-xl-4 order-lg-last">
+                                                    <div class="ratio ratio-4-3 ratio-sm-16-9 ratio-md-3-2 ratio-lg-2-3 ratio-xl-5-4 ratio-xxl-4-3">
+                                                        <div><img class="img-fluid" src="assets/img/samples/cesar-rincon-XHVpWcr5grQ-unsplash.jpeg?h=b7862432225260c367edeeb417176218"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col d-flex align-items-center">
+                                                    <div class="text-lg-end card-body">
+                                                        <h4>Card title</h4>
+                                                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><small class="text-black-50">Last updated 3 mins ago</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card overflow-hidden">
+                                            <div class="row g-0">
+                                                <div class="col-12 col-lg-3 col-xl-4">
+                                                    <div class="ratio ratio-4-3 ratio-sm-16-9 ratio-md-3-2 ratio-lg-2-3 ratio-xl-5-4 ratio-xxl-4-3">
+                                                        <div><img class="img-fluid" src="assets/img/samples/rachel-mcdermott-0fN7Fxv1eWA-unsplash.jpeg?h=c61e72bab2b86b8524fb2ffbd09b1e34"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col d-flex align-items-center">
+                                                    <div class="card-body">
+                                                        <h4>Card title</h4>
+                                                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><small class="text-black-50">Last updated 3 mins ago</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card overflow-hidden">
+                                            <div class="row g-0">
+                                                <div class="col-12 col-lg-3 col-xl-4 order-lg-last">
+                                                    <div class="ratio ratio-4-3 ratio-sm-16-9 ratio-md-3-2 ratio-lg-2-3 ratio-xl-5-4 ratio-xxl-4-3">
+                                                        <div><img class="img-fluid" src="assets/img/samples/matthew-henry-VviFtDJakYk-unsplash.jpeg?h=4c72ef708a7dfb839ad5862eda604a20"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col d-flex align-items-center">
+                                                    <div class="text-lg-end card-body">
+                                                        <h4>Card title</h4>
+                                                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><small class="text-black-50">Last updated 3 mins ago</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h1 class="display-6 border-bottom pb-2 mb-3 mt-5"><span class="me-3">Videos list</span></h1>
+                                <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-lg-1">
+                                    <div class="col">
+                                        <div class="card overflow-hidden">
+                                            <div class="row g-0">
+                                                <div class="col-12 col-xl-6 col-xxl-5">
+                                                    <div class="ratio ratio-16-9"><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/jrTMMG0zJyI" width="1920" height="1080"></iframe></div>
+                                                </div>
+                                                <div class="col d-flex align-items-center">
+                                                    <div class="card-body">
+                                                        <h4>Samurai Japanese Lofi HipHop Mix<br></h4>
+                                                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p><small class="text-black-50">Last updated 3 mins ago</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card overflow-hidden">
+                                            <div class="row g-0">
+                                                <div class="col-12 col-xl-6 col-xxl-5">
+                                                    <div class="ratio ratio-16-9"><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/AEKxFlfAdIw" width="1920" height="1080"></iframe></div>
+                                                </div>
+                                                <div class="col d-flex align-items-center">
+                                                    <div class="card-body">
+                                                        <h4>Return of the Boom Bap (Vol.3)</h4>
+                                                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p><small class="text-black-50">Last updated 3 mins ago</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-white bg-dark p-3">
+                            <p class="text-center mb-0 small">Created with <em>passion</em> by&nbsp;<a class="fw-bold link-light" href="https://forum.bootstrapstudio.io/u/michalbialkowski/" target="_blank">Michał Białkowski</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3 order-lg-first overflow-hidden" style="background: #dfdfdf">
+                        <div class="shadow-sm">
+                            <div class="card rounded-0 border-0 border-bottom">
+                                <div class="card-header">
+                                    <h5 class="mb-0"><a class="fw-bold" href="index.html">MDB Bootstrap for BSS</a></h5>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text small">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                </div>
+                            </div>
+                            <div class="accordion accordion-flush" role="tablist" id="accordion-1">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="false" aria-controls="accordion-1 .item-1"><span>Getting started</span></button></h2>
+                                    <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-1">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled my-n1">
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="index.html">Overview</a></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="index-components.html">Component list</a></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1 opacity-50"><a class="link-dark" href="#!">Customization</a><small>Soon!</small></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1 opacity-50"><a class="link-dark" href="#!">Download repository</a><small>Soon!</small></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="https://bootstrapstudio.io" data-bs-target="https://bootstrapstudio.io/#purchase" target="_blank">Bootstrap Studio</a><i class="fas fa-external-link-alt small"></i></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1 ps-4"><a class="fw-bold" href="https://bootstrapstudio.io/demo/" data-bs-target="https://bootstrapstudio.io/#purchase" target="_blank">Browser Demo</a><i class="fas fa-external-link-alt small"></i></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1 ps-4"><a class="fw-bold" href="https://bootstrapstudio.io/#purchase" data-bs-target="https://bootstrapstudio.io/#purchase" target="_blank">Purchase Bootstrap Studio</a><i class="fas fa-external-link-alt small"></i></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="https://mdbootstrap.com" data-bs-target="https://bootstrapstudio.io/#purchase" target="_blank">Material Design for Bootstrap</a><i class="fas fa-external-link-alt small"></i></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1 opacity-50"><a class="link-dark" href="#!">Apple style Design</a><small>Soon!</small></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item rounded-0">
+                                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed fw-bold rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-2" aria-expanded="false" aria-controls="accordion-1 .item-2"><span>Content &amp; Styles</span></button></h2>
+                                    <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-1">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled my-n1">
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="content-typography.html">Typography</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="content-images.html">Images</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="content-tables.html">Tables</a><span class="badge bg-info">Almost done</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="content-figures.html">Figures</a><span class="badge bg-success">Available</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item rounded-0">
+                                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-3" aria-expanded="false" aria-controls="accordion-1 .item-3"><span>Components</span></button></h2>
+                                    <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-1">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled my-n1">
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="components-accordion.html">Accordion</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="components-alerts.html">Alerts</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="components-badges.html">Badges</a><span class="badge bg-info">Almost done</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="components-breadcrumbs.html">Breadcrumbs</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="components-buttons.html">Buttons</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="components-button-group.html">Button group</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="components-cards.html">Cards</a><span class="badge bg-info">Almost done</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="components-carousel.html">Carousel</a><span class="badge bg-info">Almost done</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="components-close-button.html">Close button</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="components-collapse.html">Collapse</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="components-dropdowns.html">Dropdowns</a><span class="badge bg-info">Almost done</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="components-list-group.html">List group</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="components-modal.html">Modal</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="components-nav.html">Nav</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="components-navbar.html">Navbar</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="components-offcanvas.html">Offcanvas</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="components-pagination.html">Pagination</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="components-placeholders.html">Placeholders</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="components-popovers.html">Popovers</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="components-progress.html">Progress</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="components-scrollspy.html">Scrollspy</a><span class="badge bg-info">Almost done</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="components-spinners.html">Spinners</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="components-tabs.html">Tabs</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="components-toasts.html">Toasts</a><span class="badge bg-info">Almost done</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="components-tooltips.html">Tooltips</a><span class="badge bg-success">Available</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item rounded-0">
+                                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-4" aria-expanded="false" aria-controls="accordion-1 .item-4"><span>Forms</span></button></h2>
+                                    <div class="accordion-collapse collapse item-4" role="tabpanel" data-bs-parent="#accordion-1">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled my-n1">
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="forms-overview.html">Overview</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="forms-checkbox.html">Checkbox</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="forms-file.html">File</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="forms-input-group.html">Input group</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="forms-input-fields.html">Input fields</a><span class="badge bg-success">Available</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-5" aria-expanded="false" aria-controls="accordion-1 .item-5"><span>Data</span></button></h2>
+                                    <div class="accordion-collapse collapse item-5" role="tabpanel" data-bs-parent="#accordion-1">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled my-n1">
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bold" href="data-charts.html">Charts</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1 opacity-50"><a class="link-dark" href="#!">Datatables</a><small>Soon!</small></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-6" aria-expanded="false" aria-controls="accordion-1 .item-6"><span>Utilities</span></button></h2>
+                                    <div class="accordion-collapse collapse item-6" role="tabpanel" data-bs-parent="#accordion-1">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled my-n1">
+                                                <li class="d-flex justify-content-between align-items-center py-1 opacity-50"><a class="link-dark" href="#!">Borders</a><small>Soon!</small></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1 opacity-50"><a class="link-dark" href="#!">Spacing</a><small>Soon!</small></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1 opacity-50"><a class="link-dark" href="#!">Stacks</a><small>Soon!</small></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1 opacity-50"><a class="link-dark" href="#!">Text</a><small>Soon!</small></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1 opacity-50"><a class="link-dark" href="#!">Vertical rule</a><small>Soon!</small></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" role="tab"><button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-7" aria-expanded="true" aria-controls="accordion-1 .item-7"><span>Custom components</span></button></h2>
+                                    <div class="accordion-collapse collapse show item-7" role="tabpanel" data-bs-parent="#accordion-1">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled my-n1">
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bolder" href="custom-ratio.html">Ratio</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bolder" href="custom-bg-image.html">Background image</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1 opacity-50"><a class="link-dark" href="#!">Table grid</a><small>Soon!</small></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1 opacity-50"><a class="link-dark" href="#!">Steps</a><small>Soon!</small></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1 opacity-50"><a class="link-dark" href="#!">Rating</a><small>Soon!</small></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1 opacity-50"><a class="link-dark" href="#!">Line height</a><small>Soon!</small></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1 opacity-50"><a class="link-dark" href="#!">Font weight</a><small>Soon!</small></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1 opacity-50"><a class="link-dark" href="#!">Font size</a><small>Soon!</small></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1 opacity-50"><a class="link-dark" href="#!">Floathead table</a><small>Soon!</small></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1 opacity-50"><a class="link-dark" href="#!">Lightbox</a><small>Soon!</small></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bolder" href="custom-masonry.html">Masonry layout</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bolder" href="custom-flickity.html">Flickity slider</a><span class="badge bg-success">Available</span></li>
+                                                <li class="d-flex justify-content-between align-items-center py-1"><a class="fw-bolder" href="custom-fancybox.html">FancyBox</a><span class="badge bg-success">Available</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="assets/js/jquery.min.js?h=84e399b8f2181ccd73394fdeddff1638"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js?h=01bb7ae0c0b11509558f2aa83f244399"></script>
+    <script src="assets/js/bs-init.js?h=6d290e610cd963b15b5bb62efc4066fb"></script>
+    <script src="assets/js/mdb/mdb.min.js?h=ccbb146019ff028833871b5a5d61a2f4"></script>
+    <script src="assets/js/custom/libs/jquery.fancybox.js?h=b63c7cca1b5e4bd57bd854c444b895c9"></script>
+    <script src="assets/js/custom/libs/flickity.pkgd.min.js?h=8625a9d2a4f797e756dbd299c2d74fc2"></script>
+    <script src="assets/js/custom/libs/masonry.pkgd.js?h=c39480835cf00844e6407f24d8aaba2e"></script>
+    <script src="assets/js/custom/libs/triggers/flickity.js?h=ce5e4cba7cab6777b77fafcd72f253e3"></script>
+    <script src="assets/js/custom/libs/triggers/masonry.js?h=eba9bf4e2d9c7c9794b7bf1e788e5932"></script>
+</body>
+
+</html>
